@@ -12,12 +12,17 @@ def get_server():
     
 def get_nickname():
     global nickname
-    nickname=input("Type a nickname! \n")
+    nickname=input("Type a nickname! (blank for Hendrix) \n")
+    if nickname=='':
+        nickname='Hendrix'
 
 def get_location():
     global lat
     global lng
-    lat=input("Type your location (latitude, longitude)! (you can check on google maps) \n")
+    lat=input("Type your location (latitude, longitude)! You can check on google maps. (blank for -21.719743, -44.980799) \n")
+    
+    if lat=='':
+        lat='-21.719743, -44.980799'
     if len(lat.split(',')) == 2:
         lng=lat.split(',')[1]
         lat=lat.split(',')[0]
