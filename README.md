@@ -1,6 +1,6 @@
-# Little Talks - CLI Client
+# Little Talks - Client
 
-Simple CLI client for [Little Talks](https://littletalks.org/).
+Simple client for [Little Talks](https://littletalks.org/).
 
 For more info: [Little Talks - Server](https://github.com/LittleTalksOrg/little-talks-server)
 
